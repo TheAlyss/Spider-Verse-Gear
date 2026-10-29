@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Verse Gear | Raid Resource Planner Kiosk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Consistent Sticky Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-block">
+                <a href="index.html" class="brand-logo">Spider-Verse Gear</a>
+                <span class="brand-badge">Multiverse Outpost</span>
+            </div>
+            <nav class="site-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#founder" class="nav-link">Founder</a></li>
+                    <li><a href="kiosk.html" class="nav-link active">Kiosk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="kiosk-page-container">
+        <div class="kiosk-layout">
+            <!-- LEFT COLUMN (DESKTOP) / SECOND ON MOBILE: Raid Supply Rules -->
+            <section class="rules-card comic-card" aria-labelledby="rulesHeading">
+                <div class="comic-card-header">
+                    <span class="badge-tag">Intelligence Briefing</span>
+                    <h2 id="rulesHeading">Raid Supply Rules</h2>
+                </div>
+                
+                <p class="rules-intro-note"><strong>Figures are the supplies ONE hero uses in ONE day.</strong></p>
+
+                <div class="rules-block">
+                    <h3>1. Boss Tier Supply Rates (Per Hero / Per Day)</h3>
+                    <div class="table-scroll-container" tabindex="0" role="region" aria-label="Boss tier supply table">
+                        <table class="comic-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tier</th>
+                                    <th scope="col">Med-Gel</th>
+                                    <th scope="col">Web-Fluid</th>
+                                    <th scope="col">Shield Charge</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="tier-pill tier-easy">Easy</span></td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tier-pill tier-normal">Normal</span></td>
+                                    <td>6</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tier-pill tier-hard">Hard</span></td>
+                                    <td>9</td>
+                                    <td>6</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tier-pill tier-veryhard">Very Hard</span></td>
+                                    <td>12</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tier-pill tier-hardcore">Hardcore</span></td>
+                                    <td>15</td>
+                                    <td>10</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="tier-scaling-note">(Each tier up adds +3 Med-Gel, +2 Web-Fluid, +1 Shield Charge. Higher tiers are tougher bosses, so each hero needs more healing, web ammunition and shield energy.)</p>
+                </div>
+
+                <div class="rules-block">
+                    <h3>2. Raid Strategy Modifier (Per Hero / Per Day)</h3>
+                    <ul class="comic-bullet-list">
+                        <li><strong>Balanced:</strong> No extra supplies needed.</li>
+                        <li><strong>Stealth:</strong> +2 Web-Fluid per hero/day for silent takedowns and high perches.</li>
+                        <li><strong>All-Out Assault:</strong> +2 Med-Gel and +1 Shield Charge per hero/day for frontline combat.</li>
+                    </ul>
+                </div>
+
+                <div class="rules-block">
+                    <h3>3. Equipment Item Unit Prices</h3>
+                    <ul class="comic-price-grid">
+                        <li class="price-item">
+                            <span class="price-name">Med-Gel:</span>
+                            <span class="price-tag">RM 5.00 / unit</span>
+                        </li>
+                        <li class="price-item">
+                            <span class="price-name">Web-Fluid:</span>
+                            <span class="price-tag">RM 8.00 / unit</span>
+                        </li>
+                        <li class="price-item">
+                            <span class="price-name">Shield Charge:</span>
+                            <span class="price-tag">RM 15.00 / unit</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="rules-block">
+                    <h3>4. One-Time Squad Power-Ups (Per Hero)</h3>
+                    <ul class="comic-price-grid">
+                        <li class="price-item">
+                            <span class="price-name">Revive Serum:</span>
+                            <span class="price-tag">RM 60.00 each</span>
+                        </li>
+                        <li class="price-item">
+                            <span class="price-name">Web-Shooter Upgrade:</span>
+                            <span class="price-tag">RM 80.00 each</span>
+                        </li>
+                        <li class="price-item">
+                            <span class="price-name">Spider-Armor Plating:</span>
+                            <span class="price-tag">RM 100.00 each</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="rules-block formula-box">
+                    <h3>5. Tactical Allocation Formula</h3>
+                    <ul class="formula-list">
+                        <li><strong>Per hero per day</strong> = Tier figure + Strategy extra</li>
+                        <li><strong>Each hero carries</strong> = Per hero per day &times; Number of days</li>
+                        <li><strong>Squad total</strong> = Each hero carries &times; Number of heroes</li>
+                        <li><strong>Total Cost</strong> = (Squad total &times; Item price) + (Power-up price &times; Number of heroes)</li>
+                    </ul>
+                </div>
+
+                <div class="hang-mascot" aria-hidden="true"><img src="images/mascot-hang.png" alt="" height="170"></div>
+                <img class="city" src="images/city.svg" alt="" aria-hidden="true">
+            </section>
+
+            <!-- RIGHT COLUMN (DESKTOP) / FIRST ON MOBILE: Form Card + Result Box -->
+            <div class="kiosk-interactive-column">
+                <section class="form-card comic-card" aria-labelledby="plannerHeading">
+                    <div class="comic-card-header">
+                        <span class="badge-tag">Combat Logistics</span>
+                        <h2 id="plannerHeading">Raid Resource Planner</h2>
+                    </div>
+
+                    <form id="plannerForm" novalidate>
+                        <!-- Squad Leader Name -->
+                        <div class="form-field">
+                            <label for="customerName">Squad Leader / Customer Name</label>
+                            <input type="text" id="customerName" name="customerName" placeholder="e.g. Peter Parker" autocomplete="name" required>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="form-field">
+                            <label for="customerEmail">Email Address</label>
+                            <input type="email" id="customerEmail" name="customerEmail" placeholder="e.g. peter@spiderverse.org" autocomplete="email" required>
+                        </div>
+
+                        <!-- Number of Days -->
+                        <div class="form-field">
+                            <label for="numDays">Number of Days (1 - 30)</label>
+                            <input type="number" id="numDays" name="numDays" min="1" max="30" step="1" placeholder="e.g. 2" required>
+                        </div>
+
+                        <!-- Boss Select Dropdown -->
+                        <div class="form-field">
+                            <label for="boss">Choose Your Boss</label>
+                            <select id="boss" name="boss" required>
+                                <option value="">-- Choose a Boss --</option>
+                                <optgroup label="Easy Tier">
+                                    <option value="shocker" data-tier="Easy" data-power="Vibro-shock gauntlets capable of blasting concrete">Shocker</option>
+                                    <option value="chameleon" data-tier="Easy" data-power="Master of disguise and deceptive tactical espionage">Chameleon</option>
+                                    <option value="tombstone" data-tier="Easy" data-power="Superhuman strength with near-impenetrable rock-hard skin">Tombstone</option>
+                                </optgroup>
+                                <optgroup label="Normal Tier">
+                                    <option value="rhino" data-tier="Normal" data-power="Armored polymer suit with devastating charging strength">Rhino</option>
+                                    <option value="electro" data-tier="Normal" data-power="High-voltage electrical manipulation and lightning bolts">Electro</option>
+                                    <option value="mysterio" data-tier="Normal" data-power="Hypnotic holographic illusions and lethal drone arrays">Mysterio</option>
+                                </optgroup>
+                                <optgroup label="Hard Tier">
+                                    <option value="doctor-octopus" data-tier="Hard" data-power="Four highly articulate, telescoping titanium-steel tentacles">Doctor Octopus</option>
+                                    <option value="venom" data-tier="Hard" data-power="Alien symbiote grants lethal tendril assaults and regeneration">Venom</option>
+                                    <option value="sandman" data-tier="Hard" data-power="Density shifting sand body that forms giant weapons and shields">Sandman</option>
+                                </optgroup>
+                                <optgroup label="Very Hard Tier">
+                                    <option value="green-goblin" data-tier="Very Hard" data-power="Glider air strikes, pumpkin bombs and enhanced goblin serum">Green Goblin</option>
+                                    <option value="carnage" data-tier="Very Hard" data-power="Psychopathic alien symbiote forming razor-sharp blade weapons">Carnage</option>
+                                    <option value="kraven" data-tier="Very Hard" data-power="Apex tracking predator with mystical jungle serums and poisoned traps">Kraven the Hunter</option>
+                                </optgroup>
+                                <optgroup label="Hardcore Tier">
+                                    <option value="morlun" data-tier="Hardcore" data-power="Mystical energy vampire who hunts Spider-people across the multiverse">Morlun</option>
+                                    <option value="knull" data-tier="Hardcore" data-power="Ancient elder god of darkness and creator of all symbiotes">Knull</option>
+                                    <option value="mephisto" data-tier="Hardcore" data-power="Lord of the infernal realm possessing immense reality-warping magic">Mephisto</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <!-- Boss Live Preview Card -->
+                        <div id="bossPreview" class="boss-preview-container" aria-live="polite">
+                            <p class="preview-placeholder">Select a boss above to inspect threat level, intelligence briefing and tier parameters.</p>
+                        </div>
+
+                        <!-- Choose Your Squad (5 Checkbox Cards) -->
+                        <fieldset class="form-fieldset">
+                            <legend class="fieldset-legend">Choose Your Squad (1 - 5 heroes)</legend>
+                            <p class="squad-instruction">Select each Spider-hero joining this multiverse raid mission:</p>
+                            <div class="hero-checkbox-grid">
+                                <!-- 1. Miles Morales -->
+                                <label for="heroMiles" class="hero-choice-card">
+                                    <input type="checkbox" id="heroMiles" name="heroes" value="miles" class="hero-checkbox">
+                                    <div class="hero-card-content">
+                                        <img src="images/heroes/miles.jpg" alt="Miles Morales" class="hero-card-img" width="100" height="100">
+                                        <span class="hero-card-name">Miles Morales</span>
+                                    </div>
+                                </label>
+
+                                <!-- 2. Spider-Gwen -->
+                                <label for="heroGwen" class="hero-choice-card">
+                                    <input type="checkbox" id="heroGwen" name="heroes" value="gwen" class="hero-checkbox">
+                                    <div class="hero-card-content">
+                                        <img src="images/heroes/gwen.jpg" alt="Spider-Gwen" class="hero-card-img" width="100" height="100">
+                                        <span class="hero-card-name">Spider-Gwen</span>
+                                    </div>
+                                </label>
+
+                                <!-- 3. Miguel O'Hara -->
+                                <label for="heroMiguel" class="hero-choice-card">
+                                    <input type="checkbox" id="heroMiguel" name="heroes" value="miguel" class="hero-checkbox">
+                                    <div class="hero-card-content">
+                                        <img src="images/heroes/miguel.jpg" alt="Miguel O'Hara" class="hero-card-img" width="100" height="100">
+                                        <span class="hero-card-name">Miguel O'Hara</span>
+                                    </div>
+                                </label>
+
+                                <!-- 4. Spider-Man Noir -->
+                                <label for="heroNoir" class="hero-choice-card">
+                                    <input type="checkbox" id="heroNoir" name="heroes" value="noir" class="hero-checkbox">
+                                    <div class="hero-card-content">
+                                        <img src="images/heroes/noir.jpg" alt="Spider-Man Noir" class="hero-card-img" width="100" height="100">
+                                        <span class="hero-card-name">Spider-Man Noir</span>
+                                    </div>
+                                </label>
+
+                                <!-- 5. Peni Parker -->
+                                <label for="heroPeni" class="hero-choice-card">
+                                    <input type="checkbox" id="heroPeni" name="heroes" value="peni" class="hero-checkbox">
+                                    <div class="hero-card-content">
+                                        <img src="images/heroes/peni.jpg" alt="Peni Parker" class="hero-card-img" width="100" height="100">
+                                        <span class="hero-card-name">Peni Parker</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Raid Strategy Radio Group -->
+                        <fieldset class="form-fieldset">
+                            <legend class="fieldset-legend">Raid Strategy</legend>
+                            <div class="comic-radio-group">
+                                <label for="stratBalanced" class="radio-label-card">
+                                    <input type="radio" id="stratBalanced" name="strategy" value="balanced">
+                                    <span class="radio-text">
+                                        <strong>Balanced</strong>
+                                        <small>Standard tier supply usage across the squad.</small>
+                                    </span>
+                                </label>
+                                <label for="stratStealth" class="radio-label-card">
+                                    <input type="radio" id="stratStealth" name="strategy" value="stealth">
+                                    <span class="radio-text">
+                                        <strong>Stealth (+2 Web-Fluid)</strong>
+                                        <small>Adds +2 Web-Fluid per hero/day for unseen ambushes.</small>
+                                    </span>
+                                </label>
+                                <label for="stratAssault" class="radio-label-card">
+                                    <input type="radio" id="stratAssault" name="strategy" value="assault">
+                                    <span class="radio-text">
+                                        <strong>All-Out Assault (+2 Med-Gel, +1 Shield)</strong>
+                                        <small>Adds +2 Med-Gel and +1 Shield Charge per hero/day for relentless warfare.</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- One-Time Squad Power-Ups Checkboxes -->
+                        <fieldset class="form-fieldset">
+                            <legend class="fieldset-legend">Optional Squad Power-Ups (One-time, per hero)</legend>
+                            <div class="comic-checkbox-group">
+                                <label for="powerupRevive" class="checkbox-label-card">
+                                    <input type="checkbox" id="powerupRevive" name="powerups" value="revive">
+                                    <span class="checkbox-text">
+                                        <strong>Revive Serum</strong>
+                                        <small>Instant emergency squad resurrection (+RM 60.00 per hero)</small>
+                                    </span>
+                                </label>
+                                <label for="powerupWebshooter" class="checkbox-label-card">
+                                    <input type="checkbox" id="powerupWebshooter" name="powerups" value="webshooter">
+                                    <span class="checkbox-text">
+                                        <strong>Web-Shooter Upgrade</strong>
+                                        <small>Reinforced high-pressure nozzle array (+RM 80.00 per hero)</small>
+                                    </span>
+                                </label>
+                                <label for="powerupArmor" class="checkbox-label-card">
+                                    <input type="checkbox" id="powerupArmor" name="powerups" value="armor">
+                                    <span class="checkbox-text">
+                                        <strong>Spider-Armor Plating</strong>
+                                        <small>Nanotech impact dampening layer (+RM 100.00 per hero)</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Form Actions -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-submit">Plan My Raid</button>
+                            <button type="reset" id="resetBtn" class="btn btn-secondary btn-reset">Reset Form</button>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Full-Width Result Section -->
+        <section id="resultBox" class="result-box comic-card" aria-live="polite" hidden></section>
+    </main>
+
+    <!-- Consistent Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Spider-Verse Gear | ICT600 Individual Assignment</p>
+        </div>
+    </footer>
+
+    <!-- Script loaded strictly on kiosk.html -->
+    <script src="js/script.js"></script>
+</body>
+</html>
