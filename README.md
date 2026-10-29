@@ -38,7 +38,7 @@ When real artwork is added, place square images (`jpg`) into these exact directo
 2. `images/heroes/gwen.jpg` - Spider-Gwen
 3. `images/heroes/miguel.jpg` - Miguel O'Hara (Spider-Man 2099)
 4. `images/heroes/noir.jpg` - Spider-Man Noir
-5. `images/heroes/peni.jpg` - Peni Parker & SP//dr
+5. `images/heroes/peni.jpg` - Peni Parker
 
 ### Multiverse Bosses (`images/bosses/`)
 * **Easy Tier:**
